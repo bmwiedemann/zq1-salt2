@@ -1,3 +1,4 @@
 include:
   - rootpw
+  - packages
 
