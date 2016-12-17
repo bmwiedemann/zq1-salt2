@@ -1,0 +1,11 @@
+/usr
+/*bin
+/lib*
+/boot
+/root
+/proc
+/sys
+/dev
+/var
+/run
+/etc/*
