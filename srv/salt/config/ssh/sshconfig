@@ -1,0 +1,141 @@
+VerifyHostKeyDNS yes
+ForwardAgent yes
+#ForwardX11 yes
+Compression yes
+
+
+Host cvs.lsmod.de
+Port 22
+User cvs
+IdentityFile ~/.ssh/cvs_dsa
+ForwardAgent no
+ForwardX11 no
+Compression yes
+
+Host *.sf.net
+User greenbird
+RSAAuthentication yes
+PubkeyAuthentication yes
+#PasswordAuthentication no
+Protocol 2,1
+IdentityFile ~/.ssh/uni2_dsa
+
+#Host *.informatik.hu-berlin.de
+#User wiedeman
+#IdentityFile ~/.ssh/id_dsa
+
+#Host *.rz.hu-berlin.de
+#User h0444sl0
+
+Host *lanpartei.de lanpartei
+User apple
+
+Host obelix mikrom4 mikrom.dyndns.tv *.mm.zq1.de *.dove.mikrom.com
+User wiedemann
+
+Host suse1 suse1.zq1.de
+User bwiedemann
+
+Host yasttest2 yasttest2.suse.de condor ci1-opensuse cloud.suse.de crowbar
+User root
+
+Host mikrom.com
+User root
+Port 24
+
+Host ssh4 ssh ssh.zq1.de ssh4.zq1.de golf4 golf golf4.zq1.de golf.zq1.de hotel hotel4 hotel.zq1.de hotel4.zq1.de openqa openqa.opensuse.org openrd openrd.zq1.de openrd2 192.168.99.1 mikrom3 mikrom3.mikrom.com manyboxes.opensuse.org
+Port 23
+
+Host *.zq1.de
+User bernhard
+
+Host vm18x
+Hostname hotel.zq1.de
+Port 22018
+
+Host salt
+Hostname nucw.zq1.de
+Port 2222
+User root
+
+Host appserv.suse.de
+User bwiedemann
+
+# for cloud/EC2 easy ssh login
+Host 10.10.10?.* 10.10.134.* 10.10.135.* d?? d??? e?? e??? f?? f??? g?? g??? eucavm* 10.100.13.* 10.122.16*.* vm*.cloud.suse.de 10.162.16* 10.162.17* 130.57.70.1*
+UserKnownHostsFile /dev/null
+User root
+StrictHostKeyChecking no
+
+#Host *.amazonaws.com
+#UserKnownHostsFile /dev/null
+#IdentityFile /suse/bwiedemann/code/euca/ec2/id_bernhard-test
+#User root
+#StrictHostKeyChecking no
+
+Host *.cloud.suse.de *.cloud.suse.de. *.arch.suse.de essen* ci.suse.de
+User root
+# hughes.arch has bad IPv6 addr/routing:
+AddressFamily inet
+
+Host studiocloudhop
+Hostname admin04.susestudio.com
+User bwiedemann
+DynamicForward 33333
+
+#Host studiocloud 172.32.0.141
+#Hostname 172.32.0.141
+#User root
+#IdentityFile /home/bernhard/.ssh/studiocloud-id_dsa
+
+#Host openqa.opensuse.org
+#Hostname openqa1-opensuse.suse.de
+#User root
+
+Host ci.opensuse.org
+Hostname proxy-opensuse.suse.de
+User root
+Port 2223
+
+Host yasttestcrowbar
+Hostname yasttest2.suse.de
+User root
+Port 1122
+
+Host sles12
+Hostname mkchh.cloud.suse.de
+Port 22222
+User root
+
+Host tu.ci.opensuse.org
+Hostname ci1-opensuse.suse.de
+Port 22052
+User root
+
+Host obsbugzilla
+Hostname obsbugzilla.cloud.suse.de
+User obsbugzilla
+
+Host trollolo
+Hostname trollolo.cloud.suse.de
+User trollolo
+
+Host mkcloudresultcheck
+Hostname mkcloudresultcheck.cloud.suse.de
+User mkcloudresultcheck
+
+Host nexus3048
+Hostname nexus3048.cloud.suse.de
+User bwiedemann
+
+Host slemirror
+Hostname vm3a.zq1.de
+User mirror
+IdentityFile ~/.ssh/mirror_dsa
+
+# only on golf:
+Host susefallback
+HostName localhost
+Port 22284
+User bwiedemann
+
