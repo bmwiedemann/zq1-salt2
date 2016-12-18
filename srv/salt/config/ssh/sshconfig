@@ -36,7 +36,10 @@ User wiedemann
 Host suse1 suse1.zq1.de
 User bwiedemann
 
-Host yasttest2 yasttest2.suse.de condor ci1-opensuse cloud.suse.de crowbar
+Host yasttest2* bernhard bernhard.suse.de* black*
+ForwardX11 yes
+
+Host yasttest2* condor ci1-opensuse cloud.suse.de crowbar
 User root
 
 Host mikrom.com
@@ -62,7 +65,7 @@ Host appserv.suse.de
 User bwiedemann
 
 # for cloud/EC2 easy ssh login
-Host 10.10.10?.* 10.10.134.* 10.10.135.* d?? d??? e?? e??? f?? f??? g?? g??? eucavm* 10.100.13.* 10.122.16*.* vm*.cloud.suse.de 10.162.16* 10.162.17* 130.57.70.1*
+Host 10.10.10?.* 10.10.134.* 10.10.135.* d?? d??? e?? e??? f?? f??? g?? g??? eucavm* 10.100.13.* 10.122.16*.* vm*.cloud.suse.de 10.162.16* 10.162.17* 130.57.70.1* *.amazonaws.com
 UserKnownHostsFile /dev/null
 User root
 StrictHostKeyChecking no
@@ -79,7 +82,7 @@ User root
 AddressFamily inet
 
 Host studiocloudhop
-Hostname admin04.susestudio.com
+Hostname admin04.susestudio.com.
 User bwiedemann
 DynamicForward 33333
 
@@ -93,39 +96,39 @@ DynamicForward 33333
 #User root
 
 Host ci.opensuse.org
-Hostname proxy-opensuse.suse.de
+Hostname proxy-opensuse.suse.de.
 User root
 Port 2223
 
 Host yasttestcrowbar
-Hostname yasttest2.suse.de
+Hostname yasttest2.suse.de.
 User root
 Port 1122
 
 Host sles12
-Hostname mkchh.cloud.suse.de
+Hostname mkchh.cloud.suse.de.
 Port 22222
 User root
 
 Host tu.ci.opensuse.org
-Hostname ci1-opensuse.suse.de
+Hostname ci1-opensuse.suse.de.
 Port 22052
 User root
 
 Host obsbugzilla
-Hostname obsbugzilla.cloud.suse.de
+Hostname obsbugzilla.cloud.suse.de.
 User obsbugzilla
 
 Host trollolo
-Hostname trollolo.cloud.suse.de
+Hostname trollolo.cloud.suse.de.
 User trollolo
 
 Host mkcloudresultcheck
-Hostname mkcloudresultcheck.cloud.suse.de
+Hostname mkcloudresultcheck.cloud.suse.de.
 User mkcloudresultcheck
 
 Host nexus3048
-Hostname nexus3048.cloud.suse.de
+Hostname nexus3048.cloud.suse.de.
 User bwiedemann
 
 Host slemirror
