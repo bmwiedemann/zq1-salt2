@@ -1,0 +1,2 @@
+include:
+  - config.hp.printer
