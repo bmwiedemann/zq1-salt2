@@ -3,3 +3,5 @@
     - source: salt://config/ssh/sshconfig
     - user: bernhard
     - backup: minion
+    - require:
+      - user: bernhard
