@@ -33,8 +33,10 @@ User apple
 Host obelix mikrom4 mikrom.dyndns.tv *.mm.zq1.de *.dove.mikrom.com
 User wiedemann
 
-Host suse1 suse1.zq1.de
+Host suse suse1 suse1.zq1.de suse1.zq1.de.
+HostName suse1.zq1.de.
 User bwiedemann
+DynamicForward 12555
 
 Host yasttest2* bernhard bernhard.suse.de* black*
 ForwardX11 yes
