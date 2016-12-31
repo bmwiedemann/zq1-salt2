@@ -59,7 +59,7 @@ Hostname hotel.zq1.de
 Port 22018
 
 Host salt
-Hostname nucw.zq1.de
+Hostname nucw.zq1.de.
 Port 2222
 User root
 
