@@ -4,7 +4,7 @@
 
 /home/bernhard/.ssh/config:
   file.managed:
-    - source: salt://config/ssh/sshconfig
+    - source: salt://config/ssh/files/sshconfig
     - user: bernhard
     - backup: minion
     - require:
