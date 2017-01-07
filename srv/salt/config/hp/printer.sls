@@ -6,6 +6,7 @@ printerconfigured:
   file.managed:
     - name: /etc/cups/printers.conf
     - source: salt://config/hp/printers.conf
+    - unless: grep "DefaultPrinter hp" /etc/cups/printers.conf
   service.running:
     - name: cups
     - enable: True
