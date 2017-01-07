@@ -75,6 +75,7 @@ StrictHostKeyChecking no
 #Host *.amazonaws.com
 #UserKnownHostsFile /dev/null
 #IdentityFile /suse/bwiedemann/code/euca/ec2/id_bernhard-test
+#IdentityFile /home/bernhard/code/ec2/amazonbmw.pem
 #User root
 #StrictHostKeyChecking no
 
